@@ -25,7 +25,7 @@ driver.set_window_size(1120, 550)
 
 header_row = ['Zip_Code', 'Station_ID', 'Station_Name', 'Station_Type', 'County', 'CWI', 'Events']
 
-with open('welldata.txt', 'w') as f:
+with open('welldata.csv', 'w') as f:
     writer = csv.writer(f)
     writer.writerow(header_row)
     for zipcode in zipcodes:
